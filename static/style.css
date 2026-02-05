@@ -1,0 +1,78 @@
+body {
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+    color: #e5e7eb;
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #38bdf8;
+}
+
+/* Side-by-side editors */
+.editor-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.editor {
+    width: 50%;
+    text-align: left;
+}
+
+.editor h3 {
+    margin-bottom: 8px;
+}
+
+textarea, pre {
+    width: 100%;
+    height: 300px;
+    background: #020617;
+    color: #e5e7eb;
+    border: 1px solid #334155;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+/* Level selector */
+.level-select {
+    margin: 20px 0;
+}
+
+.level-select label {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Button */
+button {
+    background: #38bdf8;
+    color: #020617;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+/* Info section */
+.info {
+    margin-top: 30px;
+    text-align: left;
+}

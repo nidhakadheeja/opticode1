@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OptiCode – Python Optimizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>⚡ OptiCode</h1>
+    <p>AI-powered Python Code Optimizer</p>
+
+    <!-- Editors -->
+    <div class="editor-container">
+        <div class="editor">
+            <h3>Original Code</h3>
+            <textarea id="codeInput" placeholder="Paste your Python code here..."></textarea>
+        </div>
+
+        <div class="editor">
+            <h3>Optimized Code</h3>
+            <pre id="optimizedCode"></pre>
+        </div>
+    </div>
+
+    <!-- Optimization Level -->
+    <div class="level-select">
+        <label>
+            <input type="radio" name="level" value="level1" checked>
+            Level 1 – Rule-Based
+        </label>
+        <label>
+            <input type="radio" name="level" value="level2">
+            Level 2 – LLM-Based (Groq)
+        </label>
+    </div>
+
+    <!-- Button -->
+    <button onclick="optimizeCode()">Optimize</button>
+
+    <!-- Explanation -->
+    <div class="info">
+        <h3>XAI Explanation</h3>
+        <p id="explanation"></p>
+
+        <h3>Complexity</h3>
+        <p><b>Before:</b> <span id="before"></span></p>
+        <p><b>After:</b> <span id="after"></span></p>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
